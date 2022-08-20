@@ -16,8 +16,36 @@ body {
 
 }
 
+.input {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input [type="text"] {
+    height: 50px;
+    width: 400px;
+    background: rgba(24, 24, 27, 0.6);
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+    color: #fff;
+}
+
+.input [type="button"] {
+    height: 50px;
+    width: 200px;
+    background: rgba(24, 24, 27, 0.6);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+
 .container {
-    padding: 20px 70px;
+    padding: 0px 70px;
     color: #fff;
 }
 
@@ -37,7 +65,7 @@ body {
 
 .date-container #am-pm {
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .date-container .date {
@@ -83,12 +111,17 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .future-forecast .today {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .future-forecast .today .day {
@@ -99,9 +132,8 @@ body {
 }
 
 .future-forecast .today .temp {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 15px;
-
 }
 
 .future-forecast .weather-forecast {
@@ -117,6 +149,7 @@ body {
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .weather-forecast .weather-forecast-item .day {
@@ -128,14 +161,39 @@ body {
 
 .weather-forecast .weather-forecast-item .temp {
     font-weight: 100;
+    font-size: 12px;
 }
 
 /* Responsive design */
 
 @media only screen and (max-width: 730px) {
+
+    .container {
+        padding: 20px;
+    }
+
     .future-forecast {
         justify-content: start;
         align-items: none;
         overflow-y: scroll;
+    }
+
+    .input [type="text"] {
+        width: 250px;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .input [type="submit"] {
+        width: 150px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
     }
 }

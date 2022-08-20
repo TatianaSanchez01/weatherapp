@@ -11,6 +11,14 @@
 </head>
 
 <body>
+
+    <div class="input">
+        <form action="" method="post">
+            <input type="text" name="city" id="input" placeholder="Enter a city name">
+            <input type="button" value="Submit" id="button">
+        </form>
+    </div>
+
     <div class="container">
         <div class="current-info">
 
@@ -23,25 +31,12 @@
                 </div>
 
                 <div class="others" id="current-weather-items">
-                    <div class="weather-item">
-                        <div>Humidity</div>
-                        <div>95.2%</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Pressure</div>
-                        <div>1253</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Wind Speed</div>
-                        <div>222</div>
-                    </div>
-
                 </div>
             </div>
 
             <div class="place-container">
-                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
-                <div id="country" class="country">IN</div>
+                <div class="time-zone" id="time-zone">America/Bogota</div>
+                <div id="country" class="country">CO</div>
             </div>
         </div>
 
@@ -96,6 +91,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/weather.js"></script>
 </body>
 
