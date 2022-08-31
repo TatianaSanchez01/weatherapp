@@ -5,7 +5,7 @@ const timezoneEl = document.getElementById('time-zone');
 const countryEl = document.getElementById('country');
 const weatherForecastEl = document.getElementById('weather-forecast');
 const currentTempEl = document.getElementById('current-temp');
-const key = 'e036b66b73fce25961c7cd5d9984ee19';
+const key = 'a2685f057ae56c537cc59bef85a2e80c';
 
 var button = document.getElementById('button');
 var inputValue = document.getElementById('input');
